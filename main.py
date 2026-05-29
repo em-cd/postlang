@@ -1,12 +1,15 @@
 from antlr4 import *
-from RPNLexer import RPNLexer
-from RPNParser import RPNParser
+from postlang.PostLangLexer import PostLangLexer
+from postlang.PostLangParser import PostLangParser
 
-input_stream = InputStream("3 4 2 * +")
+with open("program.pl", "r", encoding="utf-8") as f:
+  data = f.read()
 
-lexer = RPNLexer(input_stream)
+input_stream = InputStream(data)
+
+lexer = PostLangLexer(input_stream)
 tokens = CommonTokenStream(lexer)
-parser = RPNParser(tokens)
+parser = PostLangParser(tokens)
 
 tree = parser.prog()
 
