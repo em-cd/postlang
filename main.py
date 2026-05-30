@@ -2,8 +2,8 @@ import argparse
 from antlr4 import *
 from postlang.PostLangLexer import PostLangLexer
 from postlang.PostLangParser import PostLangParser
-from postlang.PostLangVisitorImpl import PostLangVisitorImpl
-from postlang.PostLangInterpreter import PostLangInterpreter
+from PostLangVisitorImpl import PostLangVisitorImpl
+from Interpreter import Interpreter
 
 def main():
   parser_args = argparse.ArgumentParser()
@@ -35,7 +35,7 @@ def main():
     print("RPN:\n", " ".join(flat), "\n")
 
   # Run
-  interpreter = PostLangInterpreter()
+  interpreter = Interpreter()
   interpreter.run(result)
 
 if __name__ == "__main__":

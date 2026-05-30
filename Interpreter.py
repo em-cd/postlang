@@ -1,6 +1,6 @@
-from postlang.Stack import Stack
+from Stack import Stack
 
-class PostLangInterpreter:
+class Interpreter:
   def __init__(self):
     self.env: dict[str, int] = {} # To store environement variables
     self.stack = Stack()
