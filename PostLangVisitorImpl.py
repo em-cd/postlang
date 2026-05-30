@@ -44,4 +44,6 @@ class PostLangVisitorImpl(PostLangVisitor):
       return self.visit(ctx.factor())
   
   def visitFactor(self, ctx):
+      if ctx.expr():
+        return self.visit(ctx.expr())
       return [ctx.getText()]

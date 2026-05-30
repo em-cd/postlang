@@ -8,6 +8,7 @@ let z = x * y + 1;
 
 x = x + 1;
 y = x / 3;
+z = z + (x * 2)
 
 print x;
 print y;

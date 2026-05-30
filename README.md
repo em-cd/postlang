@@ -5,6 +5,7 @@ PostLang is a small compiled language that takes infix arithmetic expressions an
 ## Language features
 - Integer arithmetic: `+`, `-`, `*`, `/` (integer division)
 - Operator precedence and associativity handled by the grammar
+- Support for parentheses, e.g. `(x + 2)`
 - Variable declaration with `let`
 - Variable assignment
 - `print` statement

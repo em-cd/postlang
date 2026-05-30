@@ -35,6 +35,7 @@ term
 factor
   : VAR
   | INT
+  | '(' expr ')'
   ;
 
 VAR: [a-zA-Z]+;
