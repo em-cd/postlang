@@ -1,6 +1,8 @@
 # PostLang - Infix to RPN Compiler
 
-PostLang is a small compiled language that takes infix arithmetic expressions and compiles them to Reverse Polish Notation (RPN), which is then evaluated by a stack-based interpreter.
+## About
+ 
+PostLang is a small compiled language that takes infix arithmetic expressions and compiles them to Reverse Polish Notation (RPN), which is then evaluated by a stack-based interpreter. It supports integer arithmetic with standard operator precedence, parentheses, variables, and a `print` statement.
 
 ## Project Structure
 
@@ -21,7 +23,7 @@ PostLang is a small compiled language that takes infix arithmetic expressions an
 ```
 
 ## Language features
-- Integer arithmetic: `+`, `-`, `*`, `/` (integer division)
+- Arithmetic on positive integers: `+`, `-`, `*`, `/` (integer division)
 - Operator precedence and associativity handled by the grammar
 - Support for parentheses, e.g. `(x + 2)`
 - Variable declaration with `let`
