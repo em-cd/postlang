@@ -1,4 +1,4 @@
-# Generated from postlang/PostLang.g4 by ANTLR 4.13.2
+# Generated from PostLang.g4 by ANTLR 4.13.2
 from antlr4 import *
 if "." in __name__:
     from .PostLangParser import PostLangParser
@@ -62,12 +62,21 @@ class PostLangListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by PostLangParser#operator.
-    def enterOperator(self, ctx:PostLangParser.OperatorContext):
+    # Enter a parse tree produced by PostLangParser#term.
+    def enterTerm(self, ctx:PostLangParser.TermContext):
         pass
 
-    # Exit a parse tree produced by PostLangParser#operator.
-    def exitOperator(self, ctx:PostLangParser.OperatorContext):
+    # Exit a parse tree produced by PostLangParser#term.
+    def exitTerm(self, ctx:PostLangParser.TermContext):
+        pass
+
+
+    # Enter a parse tree produced by PostLangParser#factor.
+    def enterFactor(self, ctx:PostLangParser.FactorContext):
+        pass
+
+    # Exit a parse tree produced by PostLangParser#factor.
+    def exitFactor(self, ctx:PostLangParser.FactorContext):
         pass
 
 

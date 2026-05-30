@@ -23,23 +23,21 @@ assignStmt
   ;
 
 expr
-  : expr operator expr
-  | VAR
-  | INT
+  : left=expr op=('+'|'-') right=term
+  | term
   ;
 
-operator
-  : PLUS
-  | MINUS
-  | MULT
-  | DIV
+term
+  : left=term op=('*'|'/') right=factor
+  | factor
+  ;
+
+factor
+  : VAR
+  | INT
   ;
 
 VAR: [a-zA-Z]+;
 INT: [0-9]+ ;
-PLUS: '+' ;
-MINUS: '-';
-MULT: '*';
-DIV: '/';
 
 WS : [ \t\r\n]+ -> skip;

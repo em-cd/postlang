@@ -1,4 +1,4 @@
-# Generated from postlang/PostLang.g4 by ANTLR 4.13.2
+# Generated from PostLang.g4 by ANTLR 4.13.2
 from antlr4 import *
 if "." in __name__:
     from .PostLangParser import PostLangParser
@@ -39,8 +39,13 @@ class PostLangVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
-    # Visit a parse tree produced by PostLangParser#operator.
-    def visitOperator(self, ctx:PostLangParser.OperatorContext):
+    # Visit a parse tree produced by PostLangParser#term.
+    def visitTerm(self, ctx:PostLangParser.TermContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by PostLangParser#factor.
+    def visitFactor(self, ctx:PostLangParser.FactorContext):
         return self.visitChildren(ctx)
 
 

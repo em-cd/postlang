@@ -1,4 +1,4 @@
-# Generated from postlang/PostLang.g4 by ANTLR 4.13.2
+# Generated from PostLang.g4 by ANTLR 4.13.2
 # encoding: utf-8
 from antlr4 import *
 from io import StringIO
@@ -10,24 +10,27 @@ else:
 
 def serializedATN():
     return [
-        4,1,11,59,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,2,6,7,
-        6,1,0,5,0,16,8,0,10,0,12,0,19,9,0,1,0,1,0,1,1,1,1,1,1,3,1,26,8,1,
-        1,2,1,2,1,2,1,2,1,2,1,2,1,3,1,3,1,3,1,3,1,4,1,4,1,4,1,4,1,4,1,5,
-        1,5,1,5,3,5,46,8,5,1,5,1,5,1,5,1,5,5,5,52,8,5,10,5,12,5,55,9,5,1,
-        6,1,6,1,6,0,1,10,7,0,2,4,6,8,10,12,0,1,1,0,7,10,56,0,17,1,0,0,0,
-        2,25,1,0,0,0,4,27,1,0,0,0,6,33,1,0,0,0,8,37,1,0,0,0,10,45,1,0,0,
-        0,12,56,1,0,0,0,14,16,3,2,1,0,15,14,1,0,0,0,16,19,1,0,0,0,17,15,
-        1,0,0,0,17,18,1,0,0,0,18,20,1,0,0,0,19,17,1,0,0,0,20,21,5,0,0,1,
-        21,1,1,0,0,0,22,26,3,4,2,0,23,26,3,6,3,0,24,26,3,8,4,0,25,22,1,0,
-        0,0,25,23,1,0,0,0,25,24,1,0,0,0,26,3,1,0,0,0,27,28,5,1,0,0,28,29,
-        5,5,0,0,29,30,5,2,0,0,30,31,3,10,5,0,31,32,5,3,0,0,32,5,1,0,0,0,
-        33,34,5,4,0,0,34,35,3,10,5,0,35,36,5,3,0,0,36,7,1,0,0,0,37,38,5,
-        5,0,0,38,39,5,2,0,0,39,40,3,10,5,0,40,41,5,3,0,0,41,9,1,0,0,0,42,
-        43,6,5,-1,0,43,46,5,5,0,0,44,46,5,6,0,0,45,42,1,0,0,0,45,44,1,0,
-        0,0,46,53,1,0,0,0,47,48,10,3,0,0,48,49,3,12,6,0,49,50,3,10,5,4,50,
-        52,1,0,0,0,51,47,1,0,0,0,52,55,1,0,0,0,53,51,1,0,0,0,53,54,1,0,0,
-        0,54,11,1,0,0,0,55,53,1,0,0,0,56,57,7,0,0,0,57,13,1,0,0,0,4,17,25,
-        45,53
+        4,1,11,69,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,2,6,7,
+        6,2,7,7,7,1,0,5,0,18,8,0,10,0,12,0,21,9,0,1,0,1,0,1,1,1,1,1,1,3,
+        1,28,8,1,1,2,1,2,1,2,1,2,1,2,1,2,1,3,1,3,1,3,1,3,1,4,1,4,1,4,1,4,
+        1,4,1,5,1,5,1,5,1,5,1,5,1,5,5,5,51,8,5,10,5,12,5,54,9,5,1,6,1,6,
+        1,6,1,6,1,6,1,6,5,6,62,8,6,10,6,12,6,65,9,6,1,7,1,7,1,7,0,2,10,12,
+        8,0,2,4,6,8,10,12,14,0,3,1,0,5,6,1,0,7,8,1,0,9,10,65,0,19,1,0,0,
+        0,2,27,1,0,0,0,4,29,1,0,0,0,6,35,1,0,0,0,8,39,1,0,0,0,10,44,1,0,
+        0,0,12,55,1,0,0,0,14,66,1,0,0,0,16,18,3,2,1,0,17,16,1,0,0,0,18,21,
+        1,0,0,0,19,17,1,0,0,0,19,20,1,0,0,0,20,22,1,0,0,0,21,19,1,0,0,0,
+        22,23,5,0,0,1,23,1,1,0,0,0,24,28,3,4,2,0,25,28,3,6,3,0,26,28,3,8,
+        4,0,27,24,1,0,0,0,27,25,1,0,0,0,27,26,1,0,0,0,28,3,1,0,0,0,29,30,
+        5,1,0,0,30,31,5,9,0,0,31,32,5,2,0,0,32,33,3,10,5,0,33,34,5,3,0,0,
+        34,5,1,0,0,0,35,36,5,4,0,0,36,37,3,10,5,0,37,38,5,3,0,0,38,7,1,0,
+        0,0,39,40,5,9,0,0,40,41,5,2,0,0,41,42,3,10,5,0,42,43,5,3,0,0,43,
+        9,1,0,0,0,44,45,6,5,-1,0,45,46,3,12,6,0,46,52,1,0,0,0,47,48,10,2,
+        0,0,48,49,7,0,0,0,49,51,3,12,6,0,50,47,1,0,0,0,51,54,1,0,0,0,52,
+        50,1,0,0,0,52,53,1,0,0,0,53,11,1,0,0,0,54,52,1,0,0,0,55,56,6,6,-1,
+        0,56,57,3,14,7,0,57,63,1,0,0,0,58,59,10,2,0,0,59,60,7,1,0,0,60,62,
+        3,14,7,0,61,58,1,0,0,0,62,65,1,0,0,0,63,61,1,0,0,0,63,64,1,0,0,0,
+        64,13,1,0,0,0,65,63,1,0,0,0,66,67,7,2,0,0,67,15,1,0,0,0,4,19,27,
+        52,63
     ]
 
 class PostLangParser ( Parser ):
@@ -40,12 +43,12 @@ class PostLangParser ( Parser ):
 
     sharedContextCache = PredictionContextCache()
 
-    literalNames = [ "<INVALID>", "'let'", "'='", "';'", "'print'", "<INVALID>", 
-                     "<INVALID>", "'+'", "'-'", "'*'", "'/'" ]
+    literalNames = [ "<INVALID>", "'let'", "'='", "';'", "'print'", "'+'", 
+                     "'-'", "'*'", "'/'" ]
 
     symbolicNames = [ "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
-                      "<INVALID>", "VAR", "INT", "PLUS", "MINUS", "MULT", 
-                      "DIV", "WS" ]
+                      "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
+                      "<INVALID>", "VAR", "INT", "WS" ]
 
     RULE_prog = 0
     RULE_statement = 1
@@ -53,22 +56,23 @@ class PostLangParser ( Parser ):
     RULE_printStmt = 3
     RULE_assignStmt = 4
     RULE_expr = 5
-    RULE_operator = 6
+    RULE_term = 6
+    RULE_factor = 7
 
     ruleNames =  [ "prog", "statement", "varDecl", "printStmt", "assignStmt", 
-                   "expr", "operator" ]
+                   "expr", "term", "factor" ]
 
     EOF = Token.EOF
     T__0=1
     T__1=2
     T__2=3
     T__3=4
-    VAR=5
-    INT=6
-    PLUS=7
-    MINUS=8
-    MULT=9
-    DIV=10
+    T__4=5
+    T__5=6
+    T__6=7
+    T__7=8
+    VAR=9
+    INT=10
     WS=11
 
     def __init__(self, input:TokenStream, output:TextIO = sys.stdout):
@@ -124,17 +128,17 @@ class PostLangParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 17
+            self.state = 19
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while (((_la) & ~0x3f) == 0 and ((1 << _la) & 50) != 0):
-                self.state = 14
+            while (((_la) & ~0x3f) == 0 and ((1 << _la) & 530) != 0):
+                self.state = 16
                 self.statement()
-                self.state = 19
+                self.state = 21
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
-            self.state = 20
+            self.state = 22
             self.match(PostLangParser.EOF)
         except RecognitionException as re:
             localctx.exception = re
@@ -189,22 +193,22 @@ class PostLangParser ( Parser ):
         localctx = PostLangParser.StatementContext(self, self._ctx, self.state)
         self.enterRule(localctx, 2, self.RULE_statement)
         try:
-            self.state = 25
+            self.state = 27
             self._errHandler.sync(self)
             token = self._input.LA(1)
             if token in [1]:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 22
+                self.state = 24
                 self.varDecl()
                 pass
             elif token in [4]:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 23
+                self.state = 25
                 self.printStmt()
                 pass
-            elif token in [5]:
+            elif token in [9]:
                 self.enterOuterAlt(localctx, 3)
-                self.state = 24
+                self.state = 26
                 self.assignStmt()
                 pass
             else:
@@ -259,15 +263,15 @@ class PostLangParser ( Parser ):
         self.enterRule(localctx, 4, self.RULE_varDecl)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 27
-            self.match(PostLangParser.T__0)
-            self.state = 28
-            self.match(PostLangParser.VAR)
             self.state = 29
-            self.match(PostLangParser.T__1)
+            self.match(PostLangParser.T__0)
             self.state = 30
-            self.expr(0)
+            self.match(PostLangParser.VAR)
             self.state = 31
+            self.match(PostLangParser.T__1)
+            self.state = 32
+            self.expr(0)
+            self.state = 33
             self.match(PostLangParser.T__2)
         except RecognitionException as re:
             localctx.exception = re
@@ -315,11 +319,11 @@ class PostLangParser ( Parser ):
         self.enterRule(localctx, 6, self.RULE_printStmt)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 33
-            self.match(PostLangParser.T__3)
-            self.state = 34
-            self.expr(0)
             self.state = 35
+            self.match(PostLangParser.T__3)
+            self.state = 36
+            self.expr(0)
+            self.state = 37
             self.match(PostLangParser.T__2)
         except RecognitionException as re:
             localctx.exception = re
@@ -370,13 +374,13 @@ class PostLangParser ( Parser ):
         self.enterRule(localctx, 8, self.RULE_assignStmt)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 37
-            self.match(PostLangParser.VAR)
-            self.state = 38
-            self.match(PostLangParser.T__1)
             self.state = 39
-            self.expr(0)
+            self.match(PostLangParser.VAR)
             self.state = 40
+            self.match(PostLangParser.T__1)
+            self.state = 41
+            self.expr(0)
+            self.state = 42
             self.match(PostLangParser.T__2)
         except RecognitionException as re:
             localctx.exception = re
@@ -393,22 +397,16 @@ class PostLangParser ( Parser ):
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
+            self.left = None # ExprContext
+            self.op = None # Token
+            self.right = None # TermContext
 
-        def VAR(self):
-            return self.getToken(PostLangParser.VAR, 0)
-
-        def INT(self):
-            return self.getToken(PostLangParser.INT, 0)
-
-        def expr(self, i:int=None):
-            if i is None:
-                return self.getTypedRuleContexts(PostLangParser.ExprContext)
-            else:
-                return self.getTypedRuleContext(PostLangParser.ExprContext,i)
+        def term(self):
+            return self.getTypedRuleContext(PostLangParser.TermContext,0)
 
 
-        def operator(self):
-            return self.getTypedRuleContext(PostLangParser.OperatorContext,0)
+        def expr(self):
+            return self.getTypedRuleContext(PostLangParser.ExprContext,0)
 
 
         def getRuleIndex(self):
@@ -437,24 +435,101 @@ class PostLangParser ( Parser ):
         _prevctx = localctx
         _startState = 10
         self.enterRecursionRule(localctx, 10, self.RULE_expr, _p)
+        self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 45
-            self._errHandler.sync(self)
-            token = self._input.LA(1)
-            if token in [5]:
-                self.state = 43
-                self.match(PostLangParser.VAR)
-                pass
-            elif token in [6]:
-                self.state = 44
-                self.match(PostLangParser.INT)
-                pass
-            else:
-                raise NoViableAltException(self)
-
+            self.term(0)
             self._ctx.stop = self._input.LT(-1)
-            self.state = 53
+            self.state = 52
+            self._errHandler.sync(self)
+            _alt = self._interp.adaptivePredict(self._input,2,self._ctx)
+            while _alt!=2 and _alt!=ATN.INVALID_ALT_NUMBER:
+                if _alt==1:
+                    if self._parseListeners is not None:
+                        self.triggerExitRuleEvent()
+                    _prevctx = localctx
+                    localctx = PostLangParser.ExprContext(self, _parentctx, _parentState)
+                    localctx.left = _prevctx
+                    self.pushNewRecursionContext(localctx, _startState, self.RULE_expr)
+                    self.state = 47
+                    if not self.precpred(self._ctx, 2):
+                        from antlr4.error.Errors import FailedPredicateException
+                        raise FailedPredicateException(self, "self.precpred(self._ctx, 2)")
+                    self.state = 48
+                    localctx.op = self._input.LT(1)
+                    _la = self._input.LA(1)
+                    if not(_la==5 or _la==6):
+                        localctx.op = self._errHandler.recoverInline(self)
+                    else:
+                        self._errHandler.reportMatch(self)
+                        self.consume()
+                    self.state = 49
+                    localctx.right = self.term(0) 
+                self.state = 54
+                self._errHandler.sync(self)
+                _alt = self._interp.adaptivePredict(self._input,2,self._ctx)
+
+        except RecognitionException as re:
+            localctx.exception = re
+            self._errHandler.reportError(self, re)
+            self._errHandler.recover(self, re)
+        finally:
+            self.unrollRecursionContexts(_parentctx)
+        return localctx
+
+
+    class TermContext(ParserRuleContext):
+        __slots__ = 'parser'
+
+        def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
+            super().__init__(parent, invokingState)
+            self.parser = parser
+            self.left = None # TermContext
+            self.op = None # Token
+            self.right = None # FactorContext
+
+        def factor(self):
+            return self.getTypedRuleContext(PostLangParser.FactorContext,0)
+
+
+        def term(self):
+            return self.getTypedRuleContext(PostLangParser.TermContext,0)
+
+
+        def getRuleIndex(self):
+            return PostLangParser.RULE_term
+
+        def enterRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "enterTerm" ):
+                listener.enterTerm(self)
+
+        def exitRule(self, listener:ParseTreeListener):
+            if hasattr( listener, "exitTerm" ):
+                listener.exitTerm(self)
+
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitTerm" ):
+                return visitor.visitTerm(self)
+            else:
+                return visitor.visitChildren(self)
+
+
+
+    def term(self, _p:int=0):
+        _parentctx = self._ctx
+        _parentState = self.state
+        localctx = PostLangParser.TermContext(self, self._ctx, _parentState)
+        _prevctx = localctx
+        _startState = 12
+        self.enterRecursionRule(localctx, 12, self.RULE_term, _p)
+        self._la = 0 # Token type
+        try:
+            self.enterOuterAlt(localctx, 1)
+            self.state = 56
+            self.factor()
+            self._ctx.stop = self._input.LT(-1)
+            self.state = 63
             self._errHandler.sync(self)
             _alt = self._interp.adaptivePredict(self._input,3,self._ctx)
             while _alt!=2 and _alt!=ATN.INVALID_ALT_NUMBER:
@@ -462,17 +537,24 @@ class PostLangParser ( Parser ):
                     if self._parseListeners is not None:
                         self.triggerExitRuleEvent()
                     _prevctx = localctx
-                    localctx = PostLangParser.ExprContext(self, _parentctx, _parentState)
-                    self.pushNewRecursionContext(localctx, _startState, self.RULE_expr)
-                    self.state = 47
-                    if not self.precpred(self._ctx, 3):
+                    localctx = PostLangParser.TermContext(self, _parentctx, _parentState)
+                    localctx.left = _prevctx
+                    self.pushNewRecursionContext(localctx, _startState, self.RULE_term)
+                    self.state = 58
+                    if not self.precpred(self._ctx, 2):
                         from antlr4.error.Errors import FailedPredicateException
-                        raise FailedPredicateException(self, "self.precpred(self._ctx, 3)")
-                    self.state = 48
-                    self.operator()
-                    self.state = 49
-                    self.expr(4) 
-                self.state = 55
+                        raise FailedPredicateException(self, "self.precpred(self._ctx, 2)")
+                    self.state = 59
+                    localctx.op = self._input.LT(1)
+                    _la = self._input.LA(1)
+                    if not(_la==7 or _la==8):
+                        localctx.op = self._errHandler.recoverInline(self)
+                    else:
+                        self._errHandler.reportMatch(self)
+                        self.consume()
+                    self.state = 60
+                    localctx.right = self.factor() 
+                self.state = 65
                 self._errHandler.sync(self)
                 _alt = self._interp.adaptivePredict(self._input,3,self._ctx)
 
@@ -485,55 +567,49 @@ class PostLangParser ( Parser ):
         return localctx
 
 
-    class OperatorContext(ParserRuleContext):
+    class FactorContext(ParserRuleContext):
         __slots__ = 'parser'
 
         def __init__(self, parser, parent:ParserRuleContext=None, invokingState:int=-1):
             super().__init__(parent, invokingState)
             self.parser = parser
 
-        def PLUS(self):
-            return self.getToken(PostLangParser.PLUS, 0)
+        def VAR(self):
+            return self.getToken(PostLangParser.VAR, 0)
 
-        def MINUS(self):
-            return self.getToken(PostLangParser.MINUS, 0)
-
-        def MULT(self):
-            return self.getToken(PostLangParser.MULT, 0)
-
-        def DIV(self):
-            return self.getToken(PostLangParser.DIV, 0)
+        def INT(self):
+            return self.getToken(PostLangParser.INT, 0)
 
         def getRuleIndex(self):
-            return PostLangParser.RULE_operator
+            return PostLangParser.RULE_factor
 
         def enterRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "enterOperator" ):
-                listener.enterOperator(self)
+            if hasattr( listener, "enterFactor" ):
+                listener.enterFactor(self)
 
         def exitRule(self, listener:ParseTreeListener):
-            if hasattr( listener, "exitOperator" ):
-                listener.exitOperator(self)
+            if hasattr( listener, "exitFactor" ):
+                listener.exitFactor(self)
 
         def accept(self, visitor:ParseTreeVisitor):
-            if hasattr( visitor, "visitOperator" ):
-                return visitor.visitOperator(self)
+            if hasattr( visitor, "visitFactor" ):
+                return visitor.visitFactor(self)
             else:
                 return visitor.visitChildren(self)
 
 
 
 
-    def operator(self):
+    def factor(self):
 
-        localctx = PostLangParser.OperatorContext(self, self._ctx, self.state)
-        self.enterRule(localctx, 12, self.RULE_operator)
+        localctx = PostLangParser.FactorContext(self, self._ctx, self.state)
+        self.enterRule(localctx, 14, self.RULE_factor)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 56
+            self.state = 66
             _la = self._input.LA(1)
-            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & 1920) != 0)):
+            if not(_la==9 or _la==10):
                 self._errHandler.recoverInline(self)
             else:
                 self._errHandler.reportMatch(self)
@@ -552,6 +628,7 @@ class PostLangParser ( Parser ):
         if self._predicates == None:
             self._predicates = dict()
         self._predicates[5] = self.expr_sempred
+        self._predicates[6] = self.term_sempred
         pred = self._predicates.get(ruleIndex, None)
         if pred is None:
             raise Exception("No predicate with index:" + str(ruleIndex))
@@ -560,7 +637,12 @@ class PostLangParser ( Parser ):
 
     def expr_sempred(self, localctx:ExprContext, predIndex:int):
             if predIndex == 0:
-                return self.precpred(self._ctx, 3)
+                return self.precpred(self._ctx, 2)
+         
+
+    def term_sempred(self, localctx:TermContext, predIndex:int):
+            if predIndex == 1:
+                return self.precpred(self._ctx, 2)
          
 
 
