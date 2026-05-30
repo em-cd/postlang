@@ -2,6 +2,24 @@
 
 PostLang is a small compiled language that takes infix arithmetic expressions and compiles them to Reverse Polish Notation (RPN), which is then evaluated by a stack-based interpreter.
 
+## Project Structure
+
+```
+.
+├── PostLang.g4               # ANTLR grammar
+├── main.py                   # Entry point
+├── PostLangVisitorImpl.py    # Compiler: Parse tree to RPN token list
+├── Interpreter.py            # Interpreter: executes RPN on a stack
+├── Stack.py                  # Simple stack data structure
+├── program.pl                # Example source file
+└── postlang/                 # ANTLR-generated parser/lexer files
+    ├── PostLangLexer.py
+    ├── PostLangParser.py
+    ├── PostLangVisitor.py
+    └── ...
+
+```
+
 ## Language features
 - Integer arithmetic: `+`, `-`, `*`, `/` (integer division)
 - Operator precedence and associativity handled by the grammar
@@ -24,10 +42,9 @@ print x * 2 + 1;
 The pipeline has three stages:
  
 1. **Parsing** — ANTLR lexes and parses the source file into a parse tree.
-2. **Compilation** — A visitor walks the parse tree and emits a flat list of RPN tokens for each statement. For example, `x * y + 1` becomes `x y * 1 +`. Variable assignments are emitted as `=varname` tokens to distinguish them from variable reads.
+2. **Compilation** — A visitor walks the parse tree and produces a flat list of RPN tokens for each statement. For example, `x * y + 1` becomes `x y * 1 +`. Variable assignments are stored as `=varname` tokens to distinguish them from variable reads.
 3. **Interpretation** — The interpreter executes each RPN token list from left to right, using a stack. Operands are pushed; operators pop their arguments, compute, and push the result; `=varname` tokens pop the top of the stack and store it in the environment; `print` pops and prints.
 
----
  
 ## Usage
  
