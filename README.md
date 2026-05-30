@@ -69,7 +69,7 @@ antlr4 -Dlanguage=Python3 -visitor PostLang.g4 -o postlang
  
 ### Run a program
 
-You need a source file containing a PostLang program. In this repo, you will find an example called `program.pl`, but any text file will work.
+You need a source file containing a PostLang program. In this repo, you will find an example called `program.pl`, but any text file will work as long as it contains PostLang code.
 
 ```bash
 python main.py program.pl
