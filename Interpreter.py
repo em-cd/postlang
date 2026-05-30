@@ -1,8 +1,10 @@
 from Stack import Stack
 
+# An Interpreter for PostLang. Call run() with a list of RPN statements generated
+# by the compiler (PostLangVisitorImpl)
 class Interpreter:
   def __init__(self):
-    self.env: dict[str, int] = {} # To store environement variables
+    self.env: dict[str, int] = {} # To store environment variables
     self.stack = Stack()
 
   def run(self, rpn_statements):
@@ -27,14 +29,12 @@ class Interpreter:
             # Take the string from the second character to strip the '='
             self.env[token[1:]] = self.stack.pop()
           case _:
-            # It's a variable we have previously stored
+            # Is it a variable we have previously stored?
             if token in self.env:
               self.stack.push(self.env[token])
-            # It's a literal
-            elif token.isdigit():
-              self.stack.push(int(token))
             else:
-              raise RuntimeError(f"Undefined variable or unknown token: '{token}'")
-
-        # print(f"self.stack: {self.stack}")
-        # print(f"Env:  {self.env}")
+              # Try if it is an integer literal
+              try:
+                self.stack.push(int(token))
+              except ValueError:
+                raise RuntimeError(f"Undefined variable or unknown token: '{token}'")
